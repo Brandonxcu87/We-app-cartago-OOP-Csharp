@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C150934E-A9EB-46D0-A11F-6D7718023FE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WeAppCartago</RootNamespace>
+    <AssemblyName>WeAppCartago</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarAdmins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarAdmins.Designer.cs">
+      <DependentUpon>AgregarAdmins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistenciaAbajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistenciaAbajo.Designer.cs">
+      <DependentUpon>AsistenciaAbajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClaseAdmins.cs" />
+    <Compile Include="ClaseAdminsHelper.cs" />
+    <Compile Include="ClaseAsistencia.cs" />
+    <Compile Include="ClaseAsistenciaHelper.cs" />
+    <Compile Include="ClaseEmergencia.cs" />
+    <Compile Include="ClaseEmergenciaHelper.cs" />
+    <Compile Include="ClaseFichasMedicasHelper.cs" />
+    <Compile Include="ClaseMiembros.cs" />
+    <Compile Include="ClaseMiembrosHelper.cs" />
+    <Compile Include="ClasePesajes.cs" />
+    <Compile Include="ClasePesajesHelper.cs" />
+    <Compile Include="Datos.cs" />
+    <Compile Include="FichasMedicas.cs" />
+    <Compile Include="Fmr_Emergencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmr_Emergencia.Designer.cs">
+      <DependentUpon>Fmr_Emergencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmr_paso1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmr_paso1.Designer.cs">
+      <DependentUpon>fmr_paso1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmr_paso2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmr_paso2.Designer.cs">
+      <DependentUpon>fmr_paso2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicioBonito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicioBonito.Designer.cs">
+      <DependentUpon>FormInicioBonito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Pesajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Pesajes.Designer.cs">
+      <DependentUpon>Frm_Pesajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MirarAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MirarAsistencia.Designer.cs">
+      <DependentUpon>MirarAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAdmins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAdmins.Designer.cs">
+      <DependentUpon>ModificarAdmins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEmergencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEmergencia.Designer.cs">
+      <DependentUpon>ModificarEmergencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarFichasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarFichasMedicas.Designer.cs">
+      <DependentUpon>ModificarFichasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMiembros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMiembros.Designer.cs">
+      <DependentUpon>ModificarMiembros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostarPesaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostarPesaje.Designer.cs">
+      <DependentUpon>MostarPesaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarDatos.Designer.cs">
+      <DependentUpon>MostrarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarEmergencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarEmergencia.Designer.cs">
+      <DependentUpon>MostrarEmergencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarFichaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarFichaMedica.Designer.cs">
+      <DependentUpon>MostrarFichaMedica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarAdmins.resx">
+      <DependentUpon>AgregarAdmins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistenciaAbajo.resx">
+      <DependentUpon>AsistenciaAbajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmr_Emergencia.resx">
+      <DependentUpon>Fmr_Emergencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmr_paso1.resx">
+      <DependentUpon>fmr_paso1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmr_paso2.resx">
+      <DependentUpon>fmr_paso2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicioBonito.resx">
+      <DependentUpon>FormInicioBonito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Pesajes.resx">
+      <DependentUpon>Frm_Pesajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MirarAsistencia.resx">
+      <DependentUpon>MirarAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAdmins.resx">
+      <DependentUpon>ModificarAdmins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEmergencia.resx">
+      <DependentUpon>ModificarEmergencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarFichasMedicas.resx">
+      <DependentUpon>ModificarFichasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMiembros.resx">
+      <DependentUpon>ModificarMiembros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostarPesaje.resx">
+      <DependentUpon>MostarPesaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarDatos.resx">
+      <DependentUpon>MostrarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarEmergencia.resx">
+      <DependentUpon>MostrarEmergencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarFichaMedica.resx">
+      <DependentUpon>MostrarFichaMedica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600px-Orange_check.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600px-Orange_check.svg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2701079_approve_check_complete_done_mark_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Funcional.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxeoyCardio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boxeoChiva.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
